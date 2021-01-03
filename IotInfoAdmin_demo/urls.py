@@ -18,10 +18,16 @@ from django.urls import path
 from django.urls import include
 import login.views as login_views
 import data.views as data_views
+from rest_framework.routers import DefaultRouter
+from api.views import SenViewSet
+# 使用自动URL路由连接我们的API
+router = DefaultRouter()
+router.register(r'sen', SenViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 
+    path('', login_views.login),
     path('login/', login_views.login),
     path('register/', login_views.register),
     path('logout/', login_views.logout),
@@ -31,8 +37,10 @@ urlpatterns = [
     path('index/', data_views.index),
     path('User/', data_views.Userv),
     path('Device/', data_views.Device),
-    path('monitoring/', data_views.monitoring),
+    # path('monitoring/', data_views.monitoring),
     path('testing/', data_views.testing),
-    path('input/', data_views.input_data),
+    # path('setdata/', data_views.set_data.as_view()),
+
+    path('api/', include(router.urls)),
 ]
 

@@ -53,9 +53,9 @@
                             <li>
                                 <a href="/index/">首页</a>
                             </li>
-                            <li>
-                                <a href="/monitoring/">实时监控</a>
-                            </li>
+{#                            <li>#}
+{#                                <a href="/monitoring/">实时监控</a>#}
+{#                            </li>#}
                             <li>
                                 <a href="/User/">用户管理</a>
                             </li>
@@ -170,71 +170,71 @@
                                     <div class="col-sm-4">
 {#                                        <a href="/input/" class="btn btn-danger mb-2"><i class="mdi mdi-plus-circle mr-2"></i>添加用户</a>#}
 {#                                        <button type="button" class="btn btn-danger mb-2" ><i class="mdi mdi-plus-circle mr-2"></i> 添加用户</button>#}
-                                        <style type="text/css">
-                                            .zhezhao{
-                                                position: fixed;
-                                                left: 0px;
-                                                top: 0px;
-                                                background: #000;
-                                                width: 100%;
-                                                height: 100%;
-                                                opacity: 0.8;
-                                                z-index: 999;
-                                            }
-                                            .tankuang{
-                                                position: relative;
-                                                background: #fff;
-                                                width: 50%;
-                                                height: 80%;
-                                                border-radius: 5px;
-                                                margin: 5% auto;
-                                            }
-                                            #header{
-                                                height: 40px;
-                                            }
-                                            #header-right{
-                                                position: absolute;
-                                                width: 25px;
-                                                height: 25px;
-                                                border-radius: 5px;
-                                                background: red;
-                                                color: #ffffff;
-                                                right: 5px;
-                                                top: 5px;
-                                                text-align: center;
-
-                                            }
-                                        </style>
-                                        <button type="button" class="btn btn-danger mb-2" onclick="dianwo()"><i class="mdi mdi-plus-circle mr-2"></i>添加用户</button>
-                                        <div class="zhezhao" id='zhezhao'>
-                                            <div class="tankuang">
-                                                <div id="header">
-                                                    <span>添加用户</span>
-                                                    <form action="/User/" method="post">
-                                                        {% csrf_token %}
-                                                        <hr>
-                                                        <div class="input_1"><input type="text" name="name" placeholder="用户名"></div>
-                                                        <div class="input_1"><input type="text" name="sex" list="typelist" placeholder="性别"></div>
-                                                        <datalist id="typelist">
-                                                            <option>男</option>
-                                                            <option>女</option>
-                                                        </datalist>
-                                                        <div class="input_1"><input type="text" name="email" placeholder="邮箱"></div>
-                                                        <div class="input_1"><input class="submit_1" type="submit" value="提交"></div>
-                                                    </form>
-                                                    <div id="header-right" onclick="hidder()">x</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <script type="text/javascript">
-                                            document.getElementById('zhezhao').style.display="none";
-                                            function dianwo(){
-                                                document.getElementById('zhezhao').style.display="";
-                                            }
-                                            function hidder(){
-                                                document.getElementById('zhezhao').style.display="none";
-                                            }
-                                        </script>
+{#                                        <style type="text/css">#}
+{#                                            .zhezhao{#}
+{#                                                position: fixed;#}
+{#                                                left: 0px;#}
+{#                                                top: 0px;#}
+{#                                                background: #000;#}
+{#                                                width: 100%;#}
+{#                                                height: 100%;#}
+{#                                                opacity: 0.8;#}
+{#                                                z-index: 999;#}
+{#                                            }#}
+{#                                            .tankuang{#}
+{#                                                position: relative;#}
+{#                                                background: #fff;#}
+{#                                                width: 50%;#}
+{#                                                height: 80%;#}
+{#                                                border-radius: 5px;#}
+{#                                                margin: 5% auto;#}
+{#                                            }#}
+{#                                            #header{#}
+{#                                                height: 40px;#}
+{#                                            }#}
+{#                                            #header-right{#}
+{#                                                position: absolute;#}
+{#                                                width: 25px;#}
+{#                                                height: 25px;#}
+{#                                                border-radius: 5px;#}
+{#                                                background: red;#}
+{#                                                color: #ffffff;#}
+{#                                                right: 5px;#}
+{#                                                top: 5px;#}
+{#                                                text-align: center;#}
+{##}
+{#                                            }#}
+{#                                        </style>#}
+{#                                        <button type="button" class="btn btn-danger mb-2" onclick="dianwo()"><i class="mdi mdi-plus-circle mr-2"></i>添加用户</button>#}
+{#                                        <div class="zhezhao" id='zhezhao'>#}
+{#                                            <div class="tankuang">#}
+{#                                                <div id="header">#}
+{#                                                    <span>添加用户</span>#}
+{#                                                    <form action="/User/" method="post">#}
+{#                                                        {% csrf_token %}#}
+{#                                                        <hr>#}
+{#                                                        <div class="input_1"><input type="text" name="name" placeholder="用户名"></div>#}
+{#                                                        <div class="input_1"><input type="text" name="sex" list="typelist" placeholder="性别"></div>#}
+{#                                                        <datalist id="typelist">#}
+{#                                                            <option>男</option>#}
+{#                                                            <option>女</option>#}
+{#                                                        </datalist>#}
+{#                                                        <div class="input_1"><input type="text" name="email" placeholder="邮箱"></div>#}
+{#                                                        <div class="input_1"><input class="submit_1" type="submit" value="提交"></div>#}
+{#                                                    </form>#}
+{#                                                    <div id="header-right" onclick="hidder()">x</div>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                        <script type="text/javascript">#}
+{#                                            document.getElementById('zhezhao').style.display="none";#}
+{#                                            function dianwo(){#}
+{#                                                document.getElementById('zhezhao').style.display="";#}
+{#                                            }#}
+{#                                            function hidder(){#}
+{#                                                document.getElementById('zhezhao').style.display="none";#}
+{#                                            }#}
+{#                                        </script>#}
                                     </div>
                                     <div class="col-sm-8">
                                         <div class="text-sm-right">
@@ -308,7 +308,6 @@
                                                 </td>
                                             </tr>
                                             {% endfor %}
-
 
                                         </tbody>
                                     </table>

@@ -50,9 +50,9 @@
                             <li>
                                 <a href="/index/">首页</a>
                             </li>
-                            <li>
-                                <a href="/monitoring/">实时监控</a>
-                            </li>
+{#                            <li>#}
+{#                                <a href="/monitoring/">实时监控</a>#}
+{#                            </li>#}
                             <li>
                                 <a href="/User/">用户管理</a>
                             </li>
@@ -170,7 +170,7 @@
                                             <h5 class="text-muted font-weight-normal mt-0" title="Number of Customers">实时温度</h5>
                                             <h3 class="mt-3 mb-3">{{ sensors.temperature }}</h3>
                                             <p class="mb-0 text-muted">
-                                                <span class="text-success mr-2"><i class="mdi mdi-arrow-up-bold"></i> 5.27%</span>
+                                                <span class="text-success mr-2"><i class="mdi mdi-arrow-up-bold"></i> 0.00%</span>
                                                 <span class="text-nowrap">Since last month</span>
                                             </p>
                                         </div>
@@ -189,7 +189,7 @@
                                             <h5 class="text-muted font-weight-normal mt-0" title="Number of Orders">实时湿度</h5>
                                             <h3 class="mt-3 mb-3">{{ sensors.humidity }}</h3>
                                             <p class="mb-0 text-muted">
-                                                <span class="text-danger mr-2"><i class="mdi mdi-arrow-down-bold"></i> 1.08%</span>
+                                                <span class="text-danger mr-2"><i class="mdi mdi-arrow-down-bold"></i> 0.00%</span>
                                                 <span class="text-nowrap">Since last month</span>
                                             </p>
                                         </div>
@@ -211,7 +211,7 @@
                                             <h5 class="text-muted font-weight-normal mt-0" title="Average Revenue">土壤水分</h5>
                                             <h3 class="mt-3 mb-3">{{ sensors.water }}</h3>
                                             <p class="mb-0 text-muted">
-                                                <span class="text-danger mr-2"><i class="mdi mdi-arrow-down-bold"></i> 7.00%</span>
+                                                <span class="text-danger mr-2"><i class="mdi mdi-arrow-down-bold"></i> 0.00%</span>
                                                 <span class="text-nowrap">Since last month</span>
                                             </p>
                                         </div>
@@ -230,7 +230,7 @@
                                             <h5 class="text-muted font-weight-normal mt-0" title="Growth">光照强度</h5>
                                             <h3 class="mt-3 mb-3">{{ sensors.light }}</h3>
                                             <p class="mb-0 text-muted">
-                                                <span class="text-success mr-2"><i class="mdi mdi-arrow-up-bold"></i> 4.87%</span>
+                                                <span class="text-success mr-2"><i class="mdi mdi-arrow-up-bold"></i> 0.00%</span>
                                                 <span class="text-nowrap">Since last month</span>
                                             </p>
                                         </div>
@@ -302,17 +302,17 @@
                                     <div class="chart-content-bg">
                                         <div class="row text-center">
                                             <div class="col-md-6">
-                                                <p class="text-muted mb-0 mt-3">温度分析</p>
+                                                <p class="text-muted mb-0 mt-3">本周综合数据</p>
                                                 <h2 class="font-weight-normal mb-3">
                                                     <small class="mdi mdi-checkbox-blank-circle text-primary align-middle mr-1"></small>
-                                                    <span>58,254</span>
+                                                    <span>Null</span>
                                                 </h2>
                                             </div>
                                             <div class="col-md-6">
-                                                <p class="text-muted mb-0 mt-3">湿度分析</p>
+                                                <p class="text-muted mb-0 mt-3">上周综合数据</p>
                                                 <h2 class="font-weight-normal mb-3">
                                                     <small class="mdi mdi-checkbox-blank-circle text-success align-middle mr-1"></small>
-                                                    <span>69,524</span>
+                                                    <span>Null</span>
                                                 </h2>
                                             </div>
                                         </div>
@@ -355,7 +355,7 @@
 
                                     <h5 class="mb-1 mt-0 font-weight-normal">New York</h5>
                                     <div class="progress-w-percent">
-                                        <span class="progress-value font-weight-bold">72k </span>
+                                        <span class="progress-value font-weight-bold">72 </span>
                                         <div class="progress progress-sm">
                                             <div class="progress-bar" role="progressbar" style="width: 72%;" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
@@ -363,7 +363,7 @@
 
                                     <h5 class="mb-1 mt-0 font-weight-normal">San Francisco</h5>
                                     <div class="progress-w-percent">
-                                        <span class="progress-value font-weight-bold">39k </span>
+                                        <span class="progress-value font-weight-bold">39 </span>
                                         <div class="progress progress-sm">
                                             <div class="progress-bar" role="progressbar" style="width: 39%;" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
@@ -371,7 +371,7 @@
 
                                     <h5 class="mb-1 mt-0 font-weight-normal">Sydney</h5>
                                     <div class="progress-w-percent">
-                                        <span class="progress-value font-weight-bold">25k </span>
+                                        <span class="progress-value font-weight-bold">25 </span>
                                         <div class="progress progress-sm">
                                             <div class="progress-bar" role="progressbar" style="width: 39%;" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
@@ -379,7 +379,7 @@
 
                                     <h5 class="mb-1 mt-0 font-weight-normal">Singapore</h5>
                                     <div class="progress-w-percent mb-0">
-                                        <span class="progress-value font-weight-bold">61k </span>
+                                        <span class="progress-value font-weight-bold">61 </span>
                                         <div class="progress progress-sm">
                                             <div class="progress-bar" role="progressbar" style="width: 61%;" aria-valuenow="61" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>

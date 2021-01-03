@@ -26,7 +26,7 @@ SECRET_KEY = ')$va2@c#0hf-3=pos(^q9v(smds)dm_ep@(#3n)mwqd^z^iwef'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -39,8 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'login',
     'data',
+    'api',
     'captcha',
-
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
